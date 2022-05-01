@@ -9,3 +9,8 @@ html, body{
     position: relative;
     font-family: $fontFamily-standard;
 }
+mat-card{
+    margin-top: 1vh;
+    min-height: 92vh;
+    width: 90%;
+}

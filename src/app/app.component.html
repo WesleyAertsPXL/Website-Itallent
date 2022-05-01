@@ -1,6 +1,6 @@
 <header>
    <mat-toolbar>
-      <h1>I-Tallent portfolio</h1>
+      <a id="homeButton" routerLink="home"><h1>I-Tallent portfolio</h1></a>
       <button mat-icon-button>
          <mat-icon id="menuButton" (click)="sidenav.toggle()" >menu</mat-icon>
       </button>
@@ -9,8 +9,20 @@
      <mat-sidenav id="sidenav" position="end" #sidenav [fixedInViewport]="true" role="navigation"> 
         <mat-nav-list>
          <a mat-list-item (click)="sidenav.toggle()" routerLink="huawei" routerLinkActive="active" >
-            <mat-icon class="icons">store</mat-icon>
+            <mat-icon class="icons" svgIcon="huawei"></mat-icon>
             huawei
+          </a>
+         <a mat-list-item (click)="sidenav.toggle()" routerLink="hash-code" routerLinkActive="active" >
+            <mat-icon class="icons" svgIcon="google"></mat-icon>
+            Hash Code
+          </a>
+         <a mat-list-item (click)="sidenav.toggle()" routerLink="solid" routerLinkActive="active" >
+            <mat-icon class="icons"  svgIcon="solid"></mat-icon>
+            Solid
+          </a>
+         <a mat-list-item (click)="sidenav.toggle()" routerLink="reflectie" routerLinkActive="active" >
+            <mat-icon class="icons">description</mat-icon>
+            Eindreflectie
           </a>
         </mat-nav-list>
      </mat-sidenav>

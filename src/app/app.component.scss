@@ -21,8 +21,7 @@ button{
 $sidenav-height: 8vh;
 #sidenav{
     margin-top: $sidenav-height;
-    width: 9vw;
-    min-width: 100px;
+    min-width: 150px;
 }
 .icons{
     margin-right: 5%;
@@ -36,4 +35,7 @@ mat-sidenav-content{
 }
 #routerOutlet{
     height: 100%;
+}
+#homeButton{
+    text-decoration: none;
 }
